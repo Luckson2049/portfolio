@@ -3,104 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luckson Banda</title>
+    <meta name="description" content="Luckson Banda portfolio website showcasing services, skills, projects, and contact details.">
+    <title>Luckson Banda | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portifolio.css">
 </head>
 <body>
-    <div>
-        <ul class="nav">
-            <!-- Changed <ol> to a standard generic container since links aren't a list sequence -->
-            <div class="order-list">
-                <a class="home">Home</a>
-                <a class="services">Services</a>
-                <a class="contact">Contact</a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#home" class="brand">Luckson</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#stack">Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-        </ul>
-    </div>
+        </nav>
+    </header>
 
-    <div class="CTA">
-        <div class="heading">
-            <h1>Let your Ideas become a reality as I convert them into a software</h1>
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-copy">
+                <span class="eyebrow">Available for freelance work</span>
+                <h1>Turn your ideas into software that people actually use.</h1>
+                <p>
+                    I build modern, user-focused digital products with clean code, practical problem solving,
+                    and a strong eye for experience and performance.
+                </p>
+                <div class="cta-row">
+                    <a class="button primary" href="#contact">Hire me</a>
+                    <a class="button secondary" href="#projects">View projects</a>
+                </div>
+                <ul class="stats" aria-label="Quick facts">
+                    <li><strong>3+</strong><span>Years building</span></li>
+                    <li><strong>10+</strong><span>Projects shipped</span></li>
+                    <li><strong>100%</strong><span>Focus on quality</span></li>
+                </ul>
+            </div>
+
+            <div class="hero-visual" aria-label="Profile illustration">
+                <div class="portrait-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Professional portrait">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section container">
+            <div class="section-heading">
+                <span class="eyebrow">Services</span>
+                <h2>What I can help you build</h2>
+            </div>
+
+            <div class="service-grid">
+                <article class="card service-card">
+                    <div class="icon">01</div>
+                    <h3>Web Development</h3>
+                    <p>Responsive websites and web apps built for performance, clarity, and business growth.</p>
+                </article>
+
+                <article class="card service-card">
+                    <div class="icon">02</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Clean interfaces and user-centered design systems that make products easier to navigate.</p>
+                </article>
+
+                <article class="card service-card">
+                    <div class="icon">03</div>
+                    <h3>Custom Software</h3>
+                    <p>Tools and workflow systems tailored to your process, team, and goals.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="stack" class="section container">
+            <div class="section-heading">
+                <span class="eyebrow">Core stack</span>
+                <h2>Technologies I use</h2>
+            </div>
+
+            <div class="skills">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo">
+                    <h3>Python</h3>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask logo">
+                    <h3>Flask</h3>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 logo">
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3 logo">
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo">
+                    <h3>PostgreSQL</h3>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite logo">
+                    <h3>SQLite</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <div class="section-heading">
+                <span class="eyebrow">Selected work</span>
+                <h2>Recent projects</h2>
+            </div>
+
+            <div class="project-grid">
+                <article class="card project-card">
+                    <div class="project-visual project-one"></div>
+                    <div class="project-body">
+                        <span class="tag">Web app</span>
+                        <h3>Business dashboard</h3>
+                        <p>A custom analytics dashboard built to help teams track operations and performance in real time.</p>
+                    </div>
+                </article>
+
+                <article class="card project-card">
+                    <div class="project-visual project-two"></div>
+                    <div class="project-body">
+                        <span class="tag">Product design</span>
+                        <h3>Client portal</h3>
+                        <p>A polished client-facing platform designed to simplify onboarding, communication, and reporting.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-wrap">
+            <div class="container contact-box">
+                <div>
+                    <span class="eyebrow">Let’s work together</span>
+                    <h2>Need a reliable developer for your next project?</h2>
+                </div>
+                <a class="button primary" href="mailto:lucksonbanda@example.com">Contact me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Luckson Banda</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        <div class="picture">
-            <img src="cooplink.png" alt="portrait">
-        </div>
-    </div>
-    
-    <div class="skills">
-
-    <!-- Python & Flask -->
-    <div class="python">
-        <div class="logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-                 alt="Python Logo">
-        </div>
-        <div class="logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
-                 alt="Flask Logo">
-        </div>
-        <h3>Python / Flask</h3>
-    </div>
-
-    <!-- HTML5 -->
-    <div class="HTML">
-        <div class="logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                 alt="HTML5 Logo">
-        </div>
-        <h3>HTML5</h3>
-    </div>
-
-    <!-- CSS3 -->
-    <div class="CSS">
-        <div class="logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                 alt="CSS3 Logo">
-        </div>
-        <h3>CSS3</h3>
-    </div>
-
-    <!-- JavaScript -->
-    <div class="Js">
-        <div class="logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                 alt="JavaScript Logo">
-        </div>
-        <h3>JavaScript</h3>
-    </div>
-
-    <!-- PostgreSQL -->
-    <div class="SQL">
-        <div class="logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                 alt="PostgreSQL Logo">
-        </div>
-        <h3>PostgreSQL</h3>
-    </div>
-
-    <!-- SQLite -->
-    <div class="SQLite">
-        <div class="logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
-                 alt="SQLite Logo">
-        </div>
-        <h3>SQLite</h3>
-    </div>
-
-</div>
-
-    </div> <!-- Cleaned up and closed structural wrappers correctly -->
-
-    <div class="Services">
-        <div class="service-1">Web Development</div>
-        <div class="service-2">Mobile App Development</div>
-        <div class="service-3">Desktop Application Development</div>
-    </div>
-
-    <div class="projects">
-        <div class="project-1"></div>
-        <div class="project-2"></div>
-    </div>
-
+    </footer>
 </body>
 </html>
